@@ -1,0 +1,15 @@
+INFO:     Started server process [20249]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+ERROR:    [Errno 98] error while attempting to bind on address ('127.0.0.1', 8000): address already in use
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+[Worker] 🔍 ওয়ার্কার চালু হয়েছে, কাজ খুঁজছে...
+INFO:     127.0.0.1:56846 - "GET /get-job HTTP/1.1" 200 OK
+[Buyer] 📤 কোড পাঠানো হচ্ছে...
+INFO:     127.0.0.1:56862 - "POST /submit-job HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56874 - "GET /get-job HTTP/1.1" 200 OK
+<Response [200]>[Worker] 🔥 কাজ পেয়েছি, রান করছি...
+
+✅ রেজাল্ট পেয়েছি: {'result': 'Zettamesh AI Engine Rocks! Calculation: 5 * 5 = 25\n'}
+INFO:     127.0.0.1:56890 - "POST /submit-result HTTP/1.1" 200 OK
